@@ -1,0 +1,59 @@
+$fontStyle : "Courier New", Courier;
+
+#root{
+    margin: 0%;
+    box-sizing: border-box;
+    padding: 0%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+*{
+    margin: 0%;
+    box-sizing: border-box;
+    padding: 0%; 
+}
+
+.Create-card{
+    width: fit-content;
+    margin-inline: 20px;
+}
+
+.album-card{
+    display: flex;
+    border: solid 2px;
+    width: fit-content;
+    margin: 10px;
+    font-family: $fontStyle;
+    border-radius: 5px;
+    background-color: rgba(250, 235, 215, 0.949);
+    flex-direction: column;
+    max-width: 310px;
+
+    .album-pic{
+        max-width: 310px;
+    }
+
+    .album-info{
+        flex-direction:column;
+        padding-inline: 20px ;
+        margin-top: 15px;
+        flex-wrap: wrap;
+
+        p{
+            padding-bottom: 10px;
+        }   
+    }
+
+    .album-rating{
+        display: flex;
+        align-items: end;
+
+        p{
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            padding-inline: 20px;
+        }
+    }
+}
